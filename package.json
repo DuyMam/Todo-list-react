@@ -1,15 +1,20 @@
 {
   "name": "my-app",
+  "homepage": "https://DuyMam.github.io/Todo-list-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.23.22",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-typed": "^2.0.12"
